@@ -1,0 +1,156 @@
+body{
+    background: #1B1D5A;
+    color: white;
+    position: relative;
+    
+}
+.myconatiner{
+    background: #1B1D5A;
+    color: white;
+}
+.language{
+    cursor: pointer;
+    position: relative;
+}
+.langs{
+    background-color: white;
+    color:  black;
+    cursor: pointer;
+    position: absolute;
+    display: none;
+    
+}
+.center{
+    position: absolute;
+    top: 270px;
+    
+}
+i{
+    cursor: pointer;
+}
+.border{
+    margin-bottom:2px solid blue;
+}
+.border:hover{
+    background-color: #272dd8;
+    color: white;
+}
+.show{
+    display: block;
+}
+.line{
+    display: block;
+    width:90%;
+    height: 2px;
+    background-color: white;
+    margin: 3px auto;
+}
+.backinfo{
+    background-color: #4448be;
+    width: 100vw;
+    height: 100vh;
+}
+.backred{
+    background-color:red;
+    width: 100vw;
+    height: 100vh;
+}
+.manu{
+    width: 70px;
+    text-align: center;
+    cursor: pointer;
+    z-index:88888888;
+    transform-origin: center;
+}
+.sidebar{
+    background-color: #080a42;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    transition: all 0.3s ease-in;
+    transform: translateX(-100%);
+}
+ul{
+    height: 65%;
+    align-items: center;
+   transform: translateY(300px);
+   transition: all 0.9s;
+}
+li{
+    font-weight: bolder;
+    font-style: italic;
+    color: white!important;
+    z-index: 888888;
+    cursor: pointer;
+}
+@media(max-width:700px){
+    ul li{
+        font-size: 1rem;
+    }
+    ul{
+        flex-direction: column;
+        
+    }
+    .bg{
+        display: none;
+    }
+    .sidespace{
+        display: flex;
+        gap: 8rem;
+    }
+}
+.animate{
+    animation: move 1s linear forwards;
+}
+
+@keyframes move{
+    form{
+        transform: translateY(300px);
+      opacity: 0;
+    }to{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+.side-show{
+    transform: translateX(0);
+}
+.line1-style{
+    width: 54%;
+    transform: rotate(149deg);
+}
+.line3-style{
+    width: 59%;
+    transform: rotate(-135deg);
+}
+.line2-style{
+   display: none;
+}
+.top-style{
+    transform: translateY(10px);
+}
+.darkred{
+    background-color: #10101a;
+    color: white;
+    width: 100vw;
+    height: 100vh;
+}
+.darkrblack{
+    background-color: #1616ec;
+    color: white;
+    width: 100vw;
+    height: 100vh;
+}
+
+.bg{
+    position: absolute;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13rem;
+    z-index: 0;
+    left: 300px;
+    color: #1B1D5A;
+}
